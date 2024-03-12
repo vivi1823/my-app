@@ -50,7 +50,8 @@ export default function App() {
 
       <View>
         <text style={styles.player}>Você</text>
-        <View style={styles.emojiBox}>
+        <View style={styles.emojiBox}> 
+        
       {choices.map((item) => (
         <TouchableOpacity key={item} onPress={()  => move(item)} >
         <text>{hands[item]}</text>
